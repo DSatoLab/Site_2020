@@ -61,7 +61,7 @@ body, html {
       <a href="#people" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PEOPLE</a>
       <a href="#publication" class="w3-bar-item w3-button"><i class="fa fa-file-text"></i> PUBLICATION</a>
       <a href="#gallery" class="w3-bar-item w3-button"><i class="fa fa-image"></i> GALLERY</a>
-      <a href="#location" class="w3-bar-item w3-button"><i class="fa fa-location-arrow"></i> LOCATION</a>
+      <a href="#connect" class="w3-bar-item w3-button"><i class="fa fa-location-arrow"></i> CONNECT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -79,28 +79,14 @@ body, html {
   <a href="#people" onclick="w3_close()" class="w3-bar-item w3-button">PEOPLE</a>
   <a href="#publication" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATION</a>
   <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
-  <a href="#location" onclick="w3_close()" class="w3-bar-item w3-button">LOCATION</a>
+  <a href="#connect" onclick="w3_close()" class="w3-bar-item w3-button">CONNECT</a>
 </nav>
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small"></span><br>
-    <span class="w3-jumbo w3-hide-small"></span><br>
-    <span></span><br>
-    <span></span><br>
-    <hr>
-    <p>Theoretical Cardiology Lab</p>
-    <a href="https://health.ucdavis.edu/pharmacology/"><span class="w3-small">University of California, Davis | School of Medicine | Pharmacology</span></a>
-    <hr>
-    <p><a href="#location" class="w3-button w3-white w3-padding-medium w3-medium w3-margin-top w3-opacity w3-hover-opacity-off">Contact Us</a></p>
-  </div> 
-  <!--
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-  -->
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="img/cover.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-bottommiddle w3-margin-top w3-center">
+    <h1 class="w3-small w3-text-white"><span class=" w3-hide-medium w3-hide-large w3-text-light-grey"><small>Univeristy of California, Davis</small></span> <span class="w3-hide-small w3-text-light-grey">Pharmacology Department, UC Davis School of Medicine</span></h1>
   </div>
 </header>
 
@@ -141,7 +127,7 @@ body, html {
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="research">
     <h2 class="w3-center">OUR WORK</h2>
         <p class="w3-center w3-large"></p>
-      
+        
         <div class="w3-row-padding" style="margin-top:64px">
           <div class="w3-col l3 m6">
             <img src="work/HaileyURC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster presented at Undergraduate Research Conference">
@@ -182,97 +168,99 @@ body, html {
     <div class="img-container">
         <img src="img/groupphoto.jpg" style="width:60%" onclick="onClick(this)" alt="Sato Lab group photo">
     </div>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="people/Sato.jpg" alt="Daisuke Sato, Ph.D." style="width:100%">
-        <div class="w3-container">
-          <h3>Daisuke Sato, Ph.D.</h3>
-          <p class="w3-opacity">Assistant Professor</p>
-          <p class="w3-opacity">Principal Investigator</p>
-          <p><a href="mailto:dsato.ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="people/Sato.jpg" alt="Daisuke Sato, Ph.D." style="width:100%">
+          <div class="w3-container">
+            <h3>Daisuke Sato, Ph.D.</h3>
+            <p class="w3-opacity">Assistant Professor</p>
+            <p class="w3-opacity">Principal Investigator</p>
+            <p><a href="mailto:dsato.ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
         </div>
       </div>
+      
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="people/profile.png" alt="Name" style="width:100%">
+          <div class="w3-container">
+            <h3>Ameneh Asgari-Targhi, Ph.D.</h3>
+            <p class="w3-opacity">Postdoctoral researcher</p>
+            <p>description</p>
+            <p><a href="mailto:aasgari@fas.harvard.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="people/Dina2.jpg" alt="Name" style="width:100%">
+          <div class="w3-container">
+            <h3>Dina Pham</h3>
+            <p class="w3-opacity">Undergraduate student</p>
+            <p>Biomedical Engineering mojor, CS minor</p>
+            <p><a href="mailto:dlpham.ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="people/Ariel1.jpg" alt="Name" style="width:100%">
+          <div class="w3-container">
+            <h3>Ariel Terao</h3>
+            <p class="w3-opacity">Undergraduate student</p>
+            <p>Biomedical Engineering major</p>
+            <p><a href="mailto:afterao@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+
+    <div class="w3-row-padding w3-section">  
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="people/Bardia2.jpg" alt="Name" style="width:100%">
+          <div class="w3-container">
+            <h3>Bardia Ghayoumi</h3>
+            <p class="w3-opacity">Alumni</p>
+            <p>Biochemistry major</p>
+            <p><a href="mailto:bghayoumi@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="people/Hailey2.jpg" alt="Name" style="width:100%">
+          <div class="w3-container">
+            <h3>Yuqing Huang</h3>
+            <p class="w3-opacity">Alumni</p>
+            <p>Biomedical Engineering major</p>
+            <p><a href="mailto:yuqhuang@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+          <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="people/Henry.jpg" alt="Name" style="width:100%">
+          <div class="w3-container">
+            <h3>Xiyan Mai</h3>
+            <p class="w3-opacity">Alumni</p>
+            <p>Biomedical Engineering major</p>
+            <p><a href="mailto:hxmai@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="people/Priscilla2.jpg" alt="Name" style="width:100%">
+          <div class="w3-container">
+            <h3>Priscilla Chan</h3>
+            <p class="w3-opacity">Alumni</p>
+            <p>Biomedical Engineering major</p>
+            <p><a href="mailto:pychan@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
+        </div>
+      </div>   
     </div>
-    
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="people/profile.png" alt="Name" style="width:100%">
-        <div class="w3-container">
-          <h3>Ameneh Asgari-Targhi</h3>
-          <p class="w3-opacity">Postdoctoral researcher</p>
-          <p>description</p>
-          <p><a href="mailto:aasgari@fas.harvard.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="people/Dina2.jpg" alt="Name" style="width:100%">
-        <div class="w3-container">
-          <h3>Dina Pham</h3>
-          <p class="w3-opacity">Undergraduate student</p>
-          <p>Biomedical Engineering mojor, CS minor</p>
-          <p><a href="mailto:dlpham.ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="people/Ariel1.jpg" alt="Name" style="width:100%">
-        <div class="w3-container">
-          <h3>Ariel Terao</h3>
-          <p class="w3-opacity">Undergraduate student</p>
-          <p>Biomedical Engineering major</p>
-          <p><a href="mailto:afterao@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
-        </div>
-      </div>
-    </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="people/Bardia2.jpg" alt="Name" style="width:100%">
-        <div class="w3-container">
-          <h3>Bardia Ghayoumi</h3>
-          <p class="w3-opacity">Alumni</p>
-          <p>Biochemistry major</p>
-          <p><a href="mailto:bghayoumi@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="people/Hailey2.jpg" alt="Name" style="width:100%">
-        <div class="w3-container">
-          <h3>Yuqing Huang</h3>
-          <p class="w3-opacity">Alumni</p>
-          <p>Biomedical Engineering major</p>
-          <p><a href="mailto:yuqhuang@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
-        </div>
-      </div>
-    </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="people/Henry.jpg" alt="Name" style="width:100%">
-        <div class="w3-container">
-          <h3>Xiyan Mai</h3>
-          <p class="w3-opacity">Alumni</p>
-          <p>Biomedical Engineering major</p>
-          <p><a href="mailto:hxmai@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="people/Priscilla2.jpg" alt="Name" style="width:100%">
-        <div class="w3-container">
-          <h3>Priscilla Chan</h3>
-          <p class="w3-opacity">Alumni</p>
-          <p>Biomedical Engineering major</p>
-          <p><a href="mailto:pychan@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
-        </div>
-      </div>
-    </div>   
-  </div>
 </div>
 
 
@@ -329,23 +317,23 @@ body, html {
     
       <div class="w3-row-padding" style="margin-top:64px">
         <div class="w3-col l3 m6">
-          <img src="img/2019RiP.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Research in Progress presentation on 11/08/2019">
+          <img src="img/.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Research in Progress presentation on 11/08/2019">
         </div>  
         <div class="w3-col l3 m6">
-          <img src="img/RiP_group.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Research in Progress group photo">
+          <img src="img/.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Research in Progress group photo">
         </div>
         <div class="w3-col l3 m6">
-          <img src="work/RiP_pig_model.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="picture description">
+          <img src="work/.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="picture description">
         </div>
         <div class="w3-col l3 m6">
-          <img src="work/RiP_artificial_heart.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="picture description">
+          <img src="work/.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="picture description">
         </div>
 
       </div>
     
       <div class="w3-row-padding w3-section">
         <div class="w3-col l3 m6">
-            <img src="work/RiP_pacemaker.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="picture description">
+            <img src="img/RiP_group.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="picture description">
         </div>
         <div class="w3-col l3 m6">
           <img src="img/aitrip1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lab trip to the A.I. conference in San Francisco">
@@ -360,8 +348,8 @@ body, html {
 </div>
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="location">
-  <h2 class="w3-center">Location and Contact</h2>
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="connect">
+  <h2 class="w3-center">Connect</h2>
   <p class="w3-center w3-large"></p>
   <div class="img-container" style="margin-top:48px">
     <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Office | Tupper Hall 2215</p>
