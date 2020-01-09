@@ -25,18 +25,6 @@ body, html {
   background-position: center;
   background-size: 100% 100%;
 }
-/*
-@media 
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolition: 50dpi) {
-  .bgimg-1 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("img/cover_HD.jpg");
-    width: auto;
-    height: 500px;
-  }  
-}*/
 
 .w3-bar .w3-button {
   padding: 16px;
@@ -45,9 +33,46 @@ body, html {
 .img-container {
     text-align: center;
 }
-</style>
-<body>
 
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color:#777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+<body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -128,21 +153,87 @@ body, html {
     <h2 class="w3-center">OUR WORK</h2>
         <p class="w3-center w3-large"></p>
         
+        <button type="button" class="collapsible">Research Goal</button>
+        <div class="content">
+          <p>Sudden cardiac death is the leading cause of death in the United States. Our knowledge of sudden cardiac death is still limited. CAST (Cardiac Arrhythmia Suppression Trial) and SWORD (Survival With Oral d-Sotalol) clinical trials failed, and tested drugs increased mortality. These single target drugs often cause unpredicted phenomena in the heart, which is the highly complex system. The complexities come from nonlinearities in the heart. The goal of our research is to understand how molecular level properties are linked to organ level phenomena using mathematical analysis and multiscale modeling of the heart.</p>
+        </div>
+
+        <button type="button" class="collapsible">Research Topics</button>
+        <div class="content">
+          <h4>Cardiac Alternans</h4>
+            <p>Cardiac alternans, especially spatially discordant alternans (SDA) is arrhythmogenic since it can induce spatial heterogeneity of refractoriness, which can cause wavebreak and reentry. However, the underlying mechanisms are not fully understood. We have identified several novel mechanisms for alternans at the single cell level and the tissue level. We have focused on the Ca cycling and shown the role of the intracellular Ca cycling in the formation of alternans. We identified a novel mechanism for SDA formation which is based on the cell-to-cell variability of Ca cycling within cells in cardiac tissue. The SDA patterns are formed by two competitive factors; stochastic noise (desynchronize) and diffusion (synchronize). We argue that this mechanism is clinically relevant and may underlie experimentally observed patterns of SDA. We also investigated how isoproterenol (ISO) application induces transient alternans. Arrhythmogenic alternans occurs during the transition between stable steady states. We pointed that the assessment of antiarrhythmic drug efficacy could be wrong if the transient dynamics are ignored. Therefore, a drug that is antiarrhythmic at steady state may be proarrhythmic during the transition. These results provide a novel mechanism for B-adrenergic agonists induced-arrhythmias.
+            </p>  
+          <h4>Early and Delayed Afterdepolarizations</h4>
+            <p>Early afterdepolarizations (EADs) and delayed afterdepolarizations (DADs) as premature ventricular contractions (PVCs) to trigger arrhythmias have been well established. We have shown how EADs due to reactivation of the L-type Ca current can result in large gradients of refractoriness in tissue, creating a substrate for reentry. EADs are also initiated by spontaneous Ca releases. DADs are normally initiated by spontaneous Ca releases. To understand how EADs and DADs are caused at the ryanodine receptor level and induce triggered activities at the tissue level, we use computer simulation and mathematical analysis of physiologically detailed models of the Ca cycling and the action potential. At the tissue level, Ca waves in a few cells of tissue will not cause PVCs since cells are coupled by gap junctions and surrounding cells keep the membrane potential too negative for Na channel activation. This is called “source-sink mismatch”. In order to overcome the source-sink mismatch and initiate PVCs, DADs or EADs must occur in synchrony in multiple cells. We have studied how many EAD- or DAD-primed cells are required to overcome source-sink mismatch. We also investigated how isoproterenol (ISO) application induces transient EADs. The same total amount of ISO was added in two different ways; 1) a high dose applied at once. 2) the same amount applied gradually. When a moderate dose of ISO was applied to the myocyte acutely, no EADs occur in either steady state (i.e., before and after the ISO application). However, during the transient, EADs can occur due to the differential activation rates of ICaL vs. IKs upon ISO application. On the other hand, if ISO is applied gradually, its effect on ICaL is small and always compensated by the IKs. Therefore, EADs are less likely to occur. Intense β-adrenergic stress is known to cause triggered arrhythmias. We demonstrated that moderate β-adrenergic stress, which cannot generate EADs in a long term, can induce EADs during the transition phase due to its differential time course effects on different targets.
+            </p>
+          <h4>Subcelluar Calcium Dynamics</h4>
+            <p>We have been developing a physiologically detailed models of a cardiac myocyte with the detailed subcellular Ca cycling. Using these computational models, we have investigated several topics. We investigated when Ca leak from the SR becomes a Ca spark or non-spark Ca leak. The RyR channel opens stochastically and once it opens, the single RyR opening recruits more RyR openings via Ca-induced Ca release and generates a Ca spark. Our question is why Ca sparks occur only above a threshold SR Ca concentration ([Ca]SR). We found that the single stochastic RyR opening fails to initiate a Ca spark as SR Ca load becomes lower due to 1), lower [Ca]SR reduces driving force and thus limits local cleft Ca concentration ([Ca]Cleft) achieved and the rate of rise during RyR opening; 2), low [Ca]SR limits RyR open time, which further reduces local [Ca]Cleft attained; 3), low open time and fast [Ca]Cleft dissipation after RyR closure shorten the opportunity for neighboring RyR activation; 4), at low [Ca]SR, the RyR exhibits reduced [Ca]Cleft sensitivity. These findings are consistent with experimental observations. This result was naturally extended to investigate the role of the NCX on Ca spark initiation. Depending on the membrane voltage, intracellular Ca concentration ([Ca]i), and Na concentration ([Na]), the NCX extrudes (forward mode) or brings in (reverse mode) Ca. At the resting membrane potential, the NCX is in the forward mode. We found that if Ca released from the SR is quickly removed via forward mode NCX before Ca-induced Ca release starts, the Ca release becomes non-spark Ca leak. This is also influenced by the cleft/noncleft distribution of NCX, which is still unknown experimentally. We analyzed how NCX strength and spatial distribution alter Ca spark formation. During excitation-contraction coupling, most Ca sparks are induced by ICaL with very few due to reverse mode NCX current. At the resting membrane potential if most NCX is localized to the cleft, spontaneous Ca sparks are significantly reduced. Ca spark initiation and suppression by NCX are significantly affected by [Na].
+            </p>  
+          <h4>Development of Computational Techniques</h4>
+            <p>We have also developed techniques to accelerate the whole heart simulations with general-purpose computing on graphics processing units (GPGPU). Nowadays, this technique is widely used to simulate not only the whole heart but also the subcellular calcium (Ca) cycling and signaling pathways. Improvement of simulation speed and efficiency will make it possible for us not only to use modeling and simulation approaches for understanding the mechanisms of arrhythmias but also to develop patient-specific computer aided therapy, treatment, and surgery.</p>
+            </p>
+          <h4>Device Development</h4>
+        </div>
+
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+        </script>
+
         <div class="w3-row-padding" style="margin-top:64px">
           <div class="w3-col l3 m6">
-            <img src="work/HaileyURC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster presented at Undergraduate Research Conference">
+            <video width="100%" controls autoplay>
+              <source src="work/firefly.mp4" type="video/mp4" alt="Digital Firefly (undergraduate project)">
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div class="w3-col l3 m6">
-            <img src="work/MichaelURC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster presented at Undergraduate Research Conference">
+            <img src="work/3D_printing.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="3D printed parts with SLA technology">
           </div>
           <div class="w3-col l3 m6">
-            <img src="work/PriscillaURC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster presented at Undergraduate Research Conference">
+            <img src="work/single_cell.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2D artificial muscle single cell">
           </div>
           <div class="w3-col l3 m6">
-            <img src="work/YoyoURC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster presented at Undergraduate Research Conference">
+            <img src="work/2D_cells(angle_view).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2D artificial muscle tissue">       
+          </div>
+        </div> 
+        
+        
+        <div class="w3-row-padding w3-section">
+          <div class="w3-col l3 m6">
+            <video width="100%" controls autoplay>
+              <source src="work/6x6_cell.mp4" type="video/mp4" alt="2D artificial muscle project">
+              Your browser does not support the video tag.
+            </video>   
+          </div>
+          <div class="w3-col l3 m6">
+            <img src="work/walking_stick.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Walking AssiStick: a novel human-machine interface">
+          </div>
+          <div class="w3-col l3 m6">
+            <video width="100%" controls autoplay>
+              <source src="work/walking_stick.mp4" type="video/mp4" alt="Walking AssiStick: a novel human-machine interface implementing nonlinear interaction">
+              Your browser does not support the video tag.
+            </video>   
+          </div>
+          
+          <div class="w3-col l3 m6">
+                    
           </div>
         </div>
       
+        <!--
         <div class="w3-row-padding w3-section">
           <div class="w3-col l3 m6">
             <img src="work/BardiaURC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster presented at Undergraduate Research Conference">
@@ -151,17 +242,16 @@ body, html {
             <img src="work/walking_stick.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Walking AssiStick: a novel human-machine interface implementing nonlinear interaction">
           </div>
           <div class="w3-col l3 m6">
-            <img src="work/artificial_heart.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Artificial heart muscle project">
+            <img src="work/8x8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Artificial heart muscle project">
           </div>
           <div class="w3-col l3 m6">
             <video width="100%" controls autoplay>
               <source src="work/firefly.mp4" type="video/mp4" alt="Digital Firefly (undergraduate project">
               Your browser does not support the video tag.
             </video>
-            
           </div>
-          
         </div> 
+        -->
 </div>
 
 
@@ -190,7 +280,7 @@ body, html {
           <img src="people/profile.png" alt="Name" style="width:100%">
           <div class="w3-container">
             <h3>Ameneh Asgari-Targhi, Ph.D.</h3>
-            <p class="w3-opacity">Postdoctoral researcher</p>
+            <p class="w3-opacity">Postdoctoral Scholar</p>
             <p>description</p>
             <p><a href="mailto:aasgari@fas.harvard.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
           </div>
@@ -201,8 +291,8 @@ body, html {
           <img src="people/Dina2.jpg" alt="Name" style="width:100%">
           <div class="w3-container">
             <h3>Dina Pham</h3>
-            <p class="w3-opacity">Undergraduate student</p>
-            <p>Biomedical Engineering mojor, CS minor</p>
+            <p class="w3-opacity">Student Assistant</p>
+            <p>Biomedical Engineering major, CS minor</p>
             <p><a href="mailto:dlpham.ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
           </div>
         </div>
@@ -212,14 +302,26 @@ body, html {
           <img src="people/Ariel1.jpg" alt="Name" style="width:100%">
           <div class="w3-container">
             <h3>Ariel Terao</h3>
-            <p class="w3-opacity">Undergraduate student</p>
+            <p class="w3-opacity">Student Assistant</p>
             <p>Biomedical Engineering major</p>
             <p><a href="mailto:afterao@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
           </div>
         </div>
       </div>
+    </div>
 
-    <div class="w3-row-padding w3-section">  
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="people/Jessica2.jpg" alt="Name" style="width:100%">
+          <div class="w3-container">
+            <h3>Jessica Tang</h3>
+            <p class="w3-opacity">Student Assistant</p>
+            <p>Biomedical Engineering major</p>
+            <p><a href="mailto:jestang@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
+        </div>
+      </div>  
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-card">
           <img src="people/Bardia2.jpg" alt="Name" style="width:100%">
@@ -242,17 +344,6 @@ body, html {
           </div>
         </div>
       </div>
-          <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="people/Henry.jpg" alt="Name" style="width:100%">
-          <div class="w3-container">
-            <h3>Xiyan Mai</h3>
-            <p class="w3-opacity">Alumni</p>
-            <p>Biomedical Engineering major</p>
-            <p><a href="mailto:hxmai@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
-          </div>
-        </div>
-      </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-card">
           <img src="people/Priscilla2.jpg" alt="Name" style="width:100%">
@@ -263,7 +354,12 @@ body, html {
             <p><a href="mailto:pychan@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
           </div>
         </div>
-      </div>   
+      </div>  
+     
+
+    <div class="w3-row-padding w3-section">  
+
+       
     </div>
 </div>
 
@@ -327,17 +423,17 @@ body, html {
           <img src="img/printer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sato Lab new member: Formlab Form 3 SLA printer">
         </div>
         <div class="w3-col l3 m6">
-          <img src="img/URC002.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2019 Undergraduate Research Conference">
+          <img src="work/soldering.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="PCB assembly">
         </div>
         <div class="w3-col l3 m6">
-          <img src="work/.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="picture description">
+          <img src="img/URC002.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2019 Undergraduate Research Conference">
         </div>
 
       </div>
     
       <div class="w3-row-padding w3-section">
         <div class="w3-col l3 m6">
-            <img src="img/RiP_group.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pharmacology Department Research in Progress talk">
+            <img src="img/RiP_group.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pharmacology Department Research in Progress talk. [11/09/2019]">
         </div>
         <div class="w3-col l3 m6">
           <img src="img/aitrip1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lab trip to the A.I. conference in San Francisco">
