@@ -16,16 +16,6 @@ body, html {
   line-height: 1.8;
 }
 
-/* Full height image header */
-.bgimg-1 {
-  background-image: url("img/cover_HD.jpg");
-  width: auto;
-  height: 700px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-}
-
 .w3-bar .w3-button {
   padding: 16px;
 }
@@ -136,13 +126,7 @@ body, html {
       <p class="w3-large">Differential equations vs Boolean description</p>
       <p>Which one is more fundamental to describe the universe? Differential equations are OK to describe spherical cows but not easy to describe complex/heterogeneous/multiscale systems.</p>
     </div>
-    <!--
-    <div class="w3-half">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    -->
+    
   </div>
 </div>
 
@@ -153,11 +137,13 @@ body, html {
     <h2 class="w3-center">OUR WORK</h2>
         <p class="w3-center w3-large"></p>
         
+        <!-- Collapsible button for Research Goals -->
         <button type="button" class="collapsible">Research Goal</button>
         <div class="content">
           <p>Sudden cardiac death is the leading cause of death in the United States. Our knowledge of sudden cardiac death is still limited. CAST (Cardiac Arrhythmia Suppression Trial) and SWORD (Survival With Oral d-Sotalol) clinical trials failed, and tested drugs increased mortality. These single target drugs often cause unpredicted phenomena in the heart, which is the highly complex system. The complexities come from nonlinearities in the heart. The goal of our research is to understand how molecular level properties are linked to organ level phenomena using mathematical analysis and multiscale modeling of the heart.</p>
         </div>
 
+        <!-- Collapsible button for Research Topics -->
         <button type="button" class="collapsible">Research Topics</button>
         <div class="content">
           <h4>Cardiac Alternans</h4>
@@ -176,6 +162,7 @@ body, html {
             <p>Combining the concepts of cardiac action potential and engineering techniques, we develop devices that are able to self-regulate by implementing mathematical models. Some of our ongoing device projects are the artificial heart tissue, cardiac pacemaker and the smart walking stick. Besides, we are interested in Artificial Intelligence and currently attempting to apply Machine Learning in the study of cardiac diseases.  </p>
         </div>
 
+        <!-- Script to animate collasibles -->
         <script>
           var coll = document.getElementsByClassName("collapsible");
           var i;
@@ -193,6 +180,7 @@ body, html {
           }
         </script>
 
+        <!-- Start of the Work videos and photos -->
         <div class="w3-row-padding" style="margin-top:64px">
           <div class="w3-col l3 m6">
             <video width="100%" controls autoplay>
@@ -211,7 +199,7 @@ body, html {
           </div>
         </div> 
         
-        
+        <!-- Second row of Work videos and photos -->
         <div class="w3-row-padding w3-section">
           <div class="w3-col l3 m6">
             <video width="100%" controls autoplay>
@@ -228,31 +216,8 @@ body, html {
               Your browser does not support the video tag.
             </video>   
           </div>
-          
-          <div class="w3-col l3 m6">
-                    
-          </div>
         </div>
       
-        <!--
-        <div class="w3-row-padding w3-section">
-          <div class="w3-col l3 m6">
-            <img src="work/BardiaURC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster presented at Undergraduate Research Conference">
-          </div>
-          <div class="w3-col l3 m6">
-            <img src="work/walking_stick.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Walking AssiStick: a novel human-machine interface implementing nonlinear interaction">
-          </div>
-          <div class="w3-col l3 m6">
-            <img src="work/8x8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Artificial heart muscle project">
-          </div>
-          <div class="w3-col l3 m6">
-            <video width="100%" controls autoplay>
-              <source src="work/firefly.mp4" type="video/mp4" alt="Digital Firefly (undergraduate project">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div> 
-        -->
 </div>
 
 
@@ -325,6 +290,17 @@ body, html {
       </div>  
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-card">
+          <img src="people/Yoyo.jpg" alt="Name" style="width:100%">
+          <div class="w3-container">
+            <h3>Yu-Shih Chen</h3>
+            <p class="w3-opacity">Student Assistant</p>
+            <p>Computer Science major</p>
+            <p><a href="mailto:yoychen@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
+        </div>
+      </div>  
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
           <img src="people/Bardia2.jpg" alt="Name" style="width:100%">
           <div class="w3-container">
             <h3>Bardia Ghayoumi</h3>
@@ -345,6 +321,20 @@ body, html {
           </div>
         </div>
       </div>
+      
+    <div class="w3-row-padding w3-section">  
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="people/Henry.jpg" alt="Name" style="width:100%">
+          <div class="w3-container">
+            <h3>Xiyan Mai</h3>
+            <p class="w3-opacity">Alumni</p>
+            <p>Biomedical Engineering major</p>
+            <p><a href="mailto:hxmai@ucdavis.edu"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a></p>
+          </div>
+        </div>
+      </div>  
+
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-card">
           <img src="people/Priscilla2.jpg" alt="Name" style="width:100%">
@@ -356,10 +346,6 @@ body, html {
           </div>
         </div>
       </div>  
-     
-
-    <div class="w3-row-padding w3-section">  
-
        
     </div>
 </div>
@@ -376,32 +362,6 @@ body, html {
   </div>
 </div>
 
-<!-- Skills Section 
-<div class="w3-container w3-light-grey w3-padding-64" id="publication">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Our Skills.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-      </div>
-    </div>
-  </div>
-</div>-->
 
 <!-- Publication Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="publication">
